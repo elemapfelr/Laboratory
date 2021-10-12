@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.container .inner-container .contentbox>ul>li.box1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .inner-container .contentbox>ul>li.box1 h2{
+    color: rgb(128, 215, 255);
+    padding: 1rem 0;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2rem;
+}
+
+.container .inner-container .contentbox>ul>li.box1 p{
+    color: #fff;
+}
+
+.container .inner-container .contentbox>ul>li.box1 img{
+    width: 15%;
+    height: auto;
+    padding: 2rem 0;
+    animation: imganimate 5s linear infinite;
+}
+@keyframes imganimate{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
