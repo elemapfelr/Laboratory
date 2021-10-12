@@ -112,6 +112,7 @@ body{
     left: -25%;
     top: 25%;
     background: linear-gradient(#00ccff, #d400d4);
+    /* background: linear-gradient(#f00, #0ff); */
     animation: animate 3s linear infinite;
     transition: 0.5s;
 }
@@ -137,21 +138,21 @@ body{
     font-family: 'Source Code Pro', monospace;
     font-weight: 900;
     color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #888;
     font-size: 5rem;
     line-height: 1.2em;
     position: relative;
     z-index: 1;
 }
 .selected{
-    -webkit-text-stroke: 1px #fff !important;
+    -webkit-text-stroke: 1px #888 !important;
 }
 .unselected{
     color: transparent !important;
     -webkit-text-stroke: 1px #333 !important;
 }
 .container .inner-container .menubox>ul>li a:hover{
-    color: #fff;
+    color: #888;
     -webkit-text-stroke: 1px #000;
     transition: 0.5s;
 }
@@ -163,7 +164,8 @@ body{
     transition: 0.5s;
 }
 .container .inner-container .menubox>ul>li a:hover::before{
-    color: #f00;
+    /* color: #f00; */
+    color: #d400d4;
     z-index: 2;
     -webkit-text-stroke: 1px #000;
     transform: translate(7px, -7px);
@@ -176,7 +178,8 @@ body{
     transition: 0.5s;
 }
 .container .inner-container .menubox>ul>li a:hover::after{
-    color: #0ff;
+    /* color: #0ff; */
+    color: #00ccff;
     z-index: 3;
     -webkit-text-stroke: 1px #000;
     transform: translate(12px, -12px);
