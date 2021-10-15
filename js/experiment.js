@@ -22,6 +22,7 @@ const contentboxLiOn = key => {
 menuboxUl.addEventListener('click',()=>{
     innercontainer.style.transition="0.5s";
     innercontainer.style.width="100%";
+    contentbox.style.opacity="1";
     let _target = event.target;
         menuboxLiA.forEach((el,idx) => {
             if (el == _target) {
@@ -38,6 +39,7 @@ menuboxUl.addEventListener('click',()=>{
 closeBtn.addEventListener('click',()=>{
     innercontainer.style.transition="0.5s";
     innercontainer.style.width="200%";
+    contentbox.style.opacity="0";
     menuboxLiA.forEach((el,idx) => {
         el.classList.remove('selected');
         el.classList.remove('unselected');

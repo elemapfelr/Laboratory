@@ -4,6 +4,7 @@
 @import url(content_home.css);
 @import url(content_circleLoading.css);
 @import url(content_card.css);
+@import url(content.music.css);
 
 body{
     background: #000;
@@ -62,6 +63,7 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
+    transition: all 0.5s;
 }
 .container .inner-container .contentbox button{
     display: block;
@@ -84,13 +86,14 @@ body{
 .container .inner-container .contentbox>ul>li{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 250%;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: 0.5s;
 }
 .on{
     opacity: 1 !important;
+    left: 50% !important;
 }
 
 .container .inner-container .menubox>ul{
